@@ -3,8 +3,8 @@ from src.is_it_friday import is_it_friday
 
 
 @given('today is "{day}"')
-def step_given_today_is(context):
-    context.today = "Sunday"
+def step_given_today_is(context, day):
+    context.today = day
 
 @given('today is Friday')
 def step_given_today_is(context):
